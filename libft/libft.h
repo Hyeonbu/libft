@@ -6,7 +6,7 @@
 /*   By: chanjeon <chanjeon@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/15 23:04:02 by chanjeon          #+#    #+#             */
-/*   Updated: 2022/01/30 18:26:51 by chanjeon         ###   ########.fr       */
+/*   Updated: 2022/02/03 16:32:24 by chanjeon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-# include <string.h>
 
 typedef struct s_list
 {
