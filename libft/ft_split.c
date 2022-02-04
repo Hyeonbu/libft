@@ -6,7 +6,7 @@
 /*   By: chanjeon <chanjeon@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/30 05:04:54 by chanjeon          #+#    #+#             */
-/*   Updated: 2022/01/30 05:30:37 by chanjeon         ###   ########.fr       */
+/*   Updated: 2022/02/04 14:45:24 by chanjeon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	**free_malloc(char **strs)
 	return (NULL);
 }
 
-size_t	strs_index(char const *s, char c)
+size_t	count_word(char const *s, char c)
 {
 	size_t	cnt;
 	size_t	i;
@@ -50,7 +50,7 @@ size_t	strs_index(char const *s, char c)
 	return (cnt);
 }
 
-void	split_index(char **strs, char const *s, char c, size_t cnt)
+void	split_word(char **strs, char const *s, char c, size_t cnt)
 {
 	size_t	len;
 	size_t	i;
@@ -67,7 +67,10 @@ void	split_index(char **strs, char const *s, char c, size_t cnt)
 			len++;
 		strs[i] = ft_substr(s, j, len - j);
 		if (!strs[i])
+		{
 			free_malloc(strs);
+			break ;
+		}
 	}
 	strs[i] = NULL;
 }
@@ -79,10 +82,10 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	cnt = strs_index(s, c);
+	cnt = count_word(s, c);
 	strs = (char **)malloc(sizeof(char *) * (cnt + 1));
 	if (!strs)
 		return (NULL);
-	split_index(strs, s, c, cnt);
+	split_word(strs, s, c, cnt);
 	return (strs);
 }
