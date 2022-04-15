@@ -6,7 +6,7 @@
 /*   By: chanjeon <chanjeon@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 02:31:50 by chanjeon          #+#    #+#             */
-/*   Updated: 2022/04/16 07:50:59 by chanjeon         ###   ########.fr       */
+/*   Updated: 2022/04/16 08:25:43 by chanjeon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <stdlib.h>
 
 int		ft_strlen(char *s);
-char	*ft_putnbr_base(unsigned long long int num, char *str_base);
+char	*ft_putnbr_base(unsigned long long num, char *str_base);
 int		ft_print_str(char *s);
 int		ft_printf(const char *format, ...);
 void	set_conv(va_list *ap, const char **c, int *len);

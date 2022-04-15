@@ -6,13 +6,13 @@
 /*   By: chanjeon <chanjeon@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 01:12:28 by chanjeon          #+#    #+#             */
-/*   Updated: 2022/04/15 05:04:44 by chanjeon         ###   ########.fr       */
+/*   Updated: 2022/04/16 08:25:29 by chanjeon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-char	*ft_putnbr_base(unsigned long long int num, char *str_base)
+char	*ft_putnbr_base(unsigned long long num, char *str_base)
 {
 	int					base;
 	int					cnt;
