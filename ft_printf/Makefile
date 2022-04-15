@@ -6,13 +6,13 @@
 #    By: chanjeon <chanjeon@student.42seoul.kr      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/28 02:42:42 by chanjeon          #+#    #+#              #
-#    Updated: 2022/04/15 04:14:26 by chanjeon         ###   ########.fr        #
+#    Updated: 2022/04/16 07:49:55 by chanjeon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 
-SRCS = ft_printf.c ft_utils.c ft_print_x.c ft_print_type.c
+SRCS = ft_printf.c ft_utils.c ft_print_idux.c ft_print_csp.c
 
 OBJS = $(SRCS:.c=.o)
 

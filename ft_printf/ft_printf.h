@@ -6,7 +6,7 @@
 /*   By: chanjeon <chanjeon@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 02:31:50 by chanjeon          #+#    #+#             */
-/*   Updated: 2022/04/15 04:50:30 by chanjeon         ###   ########.fr       */
+/*   Updated: 2022/04/16 07:50:59 by chanjeon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,10 @@ void	set_conv(va_list *ap, const char **c, int *len);
 int		print_p(va_list *ap);
 int		print_c(va_list *ap);
 int		print_s(va_list *ap);
-int		print_diux(va_list *ap, const char *c);
+int		print_idux(va_list *ap, const char *c);
 int		print_id(va_list *ap);
 int		print_u(va_list *ap);
 int		print_x(va_list *ap, const char *c);
-int		parse_format(va_list *ap, const char *format);
+int		format_branch(va_list *ap, const char *format);
 
 #endif

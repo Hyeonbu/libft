@@ -6,13 +6,13 @@
 /*   By: chanjeon <chanjeon@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 03:04:27 by chanjeon          #+#    #+#             */
-/*   Updated: 2022/04/15 05:14:41 by chanjeon         ###   ########.fr       */
+/*   Updated: 2022/04/16 07:48:43 by chanjeon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	print_diux(va_list *ap, const char *c)
+int	print_idux(va_list *ap, const char *c)
 {
 	int	cnt;
 

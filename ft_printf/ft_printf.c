@@ -6,7 +6,7 @@
 /*   By: chanjeon <chanjeon@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 23:59:47 by chanjeon          #+#    #+#             */
-/*   Updated: 2022/04/15 05:13:08 by chanjeon         ###   ########.fr       */
+/*   Updated: 2022/04/16 07:56:09 by chanjeon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,12 @@ int	ft_printf(const char *format, ...)
 	if (!format)
 		return (-1);
 	va_start(ap, format);
-	result = parse_format(&ap, (char *)format);
+	result = format_branch(&ap, (char *)format);
 	va_end(ap);
 	return (result);
 }
 
-int	parse_format(va_list *ap, const char *format)
+int	format_branch(va_list *ap, const char *format)
 {
 	int	read_len;
 	int	conv_len;
@@ -60,7 +60,7 @@ void	set_conv(va_list *ap, const char **c, int *len)
 	if (**c == 's')
 		*len = print_s(ap);
 	if (**c == 'd' || **c == 'i' || **c == 'u' || **c == 'x' || **c == 'X')
-		*len = print_diux(ap, *c);
+		*len = print_idux(ap, *c);
 	if (**c == '%')
 	{
 		write(1, "%", 1);
